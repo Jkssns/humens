@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>精神病们的自我介绍</title>
+	<style>
+		* {
+			margin : 0;
+			padding: 0;
+		}
+		li {
+			list-style: none;
+		}
+		.humens_wrapper {
+			width: 100%;
+			height: 100%;
+			padding: 20px 20px 0;
+			box-sizing: border-box;
+			overflow-y: auto;
+		}
+		.humen_item {
+
+		}
+		.humen_name {
+			font-family: 楷体;
+		}
+		.humen_intro{
+			line-height: 30px;
+		}
+	</style>
+</head>
+<body>
+	<ul class="humens_wrapper" id="humens_wrapper"></ul>
+</body>
+<script>
+	const humens = [
+		{
+			"name": "精神病2号",
+			"introduction": "我是精神病2号，我擅长给病友排序。"
+		}
+	]
+	const wrapper = document.getElementById('humens_wrapper')
+	let liStr = ''
+	humens.forEach((item) => {
+		liStr += `<li class="humen_item">
+			<h2 class="humen_name">群昵称：${item.name}</h2>
+			<p  class="humen_intro">${item.introduction}</p>
+		</li>`
+	})
+
+	wrapper.innerHTML = liStr
+</script>
+</html>

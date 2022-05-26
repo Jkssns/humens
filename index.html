@@ -15,6 +15,9 @@
 		li {
 			list-style: none;
 		}
+		body {
+			background-color: #f7f7f7;
+		}
 		.humens_wrapper {
 			width: 100%;
 			height: 100%;
@@ -23,14 +26,26 @@
 			overflow-y: auto;
 		}
 		.humen_item {
+			padding: 12px;
 			margin-top: 12px;
+			background: #FFFFFF;
+			opacity: 0.8;
+			box-shadow: 0px 30px 40px rgba(151, 151, 151, 0.16);
+			border-radius: 12px;
+		}
+		.humen_item:last-child {
+			margin-bottom: 20px;
 		}
 		.humen_name {
-			font-family: 楷体;
-			font-weight: 600;
+			color: #000000d9;
+			font-size: 14px;
+			line-height: 1.5715;
 		}
 		.humen_intro{
-			line-height: 30px;
+			margin-top: 10px;
+			color: #00000073;
+			font-size: 14px;
+			line-height: 1.5715;
 		}
 		.humen_intro.none{
 			color: red;
@@ -166,12 +181,28 @@
 			"name": "精神病29号",
 			"introduction": "正在想自己的自我介绍。"
 		},
+		{
+			"name": "精神病30号",
+			"introduction": "我很骚"
+		},
+		{
+			"name": "精神病31号",
+			"introduction": "80后 江苏 教师 男爱好女"
+		},
+		{
+			"name": "精神病32号",
+			"introduction": "一个小有名气的美少女 小到除了我谁也不知道  00年 爱好是骂臭男人"
+		},
+		{
+			"name": "精神病33号",
+			"introduction": "正在想自己的自我介绍。"
+		},
 	]
 	const wrapper = document.getElementById('humens_wrapper')
 	let liStr = ''
 	humens.forEach((item) => {
 		liStr += `<li class="humen_item">
-			<h2 class="humen_name">群昵称：${item.name}</h2>
+			<h2 class="humen_name">${item.name}</h2>
 			<p  class="humen_intro ${item.introduction.includes('离院') ? 'gone' : ''} ${item.introduction.includes('正在想') ? 'none' : ''}" >${item.introduction}</p>
 		</li>`
 	})

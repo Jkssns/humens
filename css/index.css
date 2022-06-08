@@ -48,7 +48,7 @@ body {
 	color: var(--intro-color);
 	font-size: 14px;
 	line-height: 1.5715;
-	white-space: pre;
+	white-space: pre-line;
 	word-break: break-all;
 }
 .humen_intro.none{

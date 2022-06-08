@@ -310,6 +310,14 @@ var humens = [
 		"introduction": "笑一个吧，功成名就不是目的\n\n让自己快乐快乐，这才叫做意义"
 	},
 	{
+		"name": "",
+		"introduction": ""
+	},
+	{
+		"name": "",
+		"introduction": ""
+	},
+	{
 		"name": "精神病64号",
 		"sex": 2,
 		"introduction": "靠进出我院刷人生经验，聪明却不用到正处上的聪明精神病。"

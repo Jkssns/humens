@@ -1,0 +1,78 @@
+
+:root {
+	--intro-color: #00000073;
+}
+li {
+	list-style: none;
+}
+body {
+	background-color: #f7f7f7;
+}
+.humens_wrapper {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+.humen_item {
+	padding: 12px;
+	margin-top: 12px;
+	background: #FFFFFF;
+	opacity: 0.8;
+	box-shadow: 0px 30px 40px rgba(151, 151, 151, 0.16);
+	border-radius: 12px;
+	overflow: hidden;
+}
+.humen_item:nth-of-type(1) {
+	margin-top: 0px;
+}
+.humen_name_wrapper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	color: #000000d9;
+	font-size: 14px;
+	line-height: 1.5715;
+}
+.sex_icon {
+	width: 18px;
+	height: 18px;
+	margin-left: 10px;
+}
+.intro {
+	
+}
+.humen_intro{
+	display: block;
+	color: var(--intro-color);
+	font-size: 14px;
+	line-height: 1.5715;
+	white-space: pre;
+	word-break: break-all;
+}
+.humen_intro.none{
+	font-weight: bolder;
+	/* display: none; */
+}
+.humen_intro.gone{
+	/* color: rgba(0, 0, 0, 0.5); */
+}
+.humen_edit {
+	flex: 1;
+	text-align: right;
+}
+.humen_edit_intro {
+	display: none;
+	width: 100%;
+	resize: vertical;
+	color: var(--intro-color);
+	font-size: 14px;
+	line-height: 1.5715;
+	white-space: pre-wrap;
+	word-break: break-all;
+	box-sizing: border-box;
+}
+.humen_edit_intro.block {
+	display: block;
+}

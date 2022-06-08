@@ -232,5 +232,69 @@ var humens = [
 	{
 		"name": "精神病46号",
 		"introduction": "正在想自己的自我介绍。"
+	},
+	{
+		"name": "精神病47号",
+		"introduction": "正在想自己的自我介绍。"
+	},
+	{
+		"name": "精神病48号",
+		"introduction": "这个人话少人呆，总容易被忽视，还有点倔。"
+	},
+	{
+		"name": "精神病49号",
+		"introduction": "小饼，双向情感障碍患者，我院稀有病种，高级精神病。"
+	},
+	{
+		"name": "精神病50号",
+		"introduction": "正在想自己的自我介绍。"
+	},
+	{
+		"name": "精神病51号",
+		"introduction": "正在想自己的自我介绍。"
+	},
+	{
+		"name": "精神病52号",
+		"introduction": "正在想自己的自我介绍。"
+	},
+	{
+		"name": "",
+		"introduction": ""
+	},
+	{
+		"name": "",
+		"introduction": ""
+	},
+	{
+		"name": "",
+		"introduction": ""
+	},
+	{
+		"name": "精神病55号",
+		"introduction": "酷"
+	},
+	{
+		"name": "精神病56号",
+		"introduction": "正在想自己的自我介绍。"
+	},
+	{
+		"name": "精神病57号",
+		"introduction": "正在想自己的自我介绍。"
+	},
+	{
+		"name": "精神病58号",
+		"introduction": "正在想自己的自我介绍。"
+	},
+	{
+		"name": "精神病60号",
+		"introduction": "正在想自己的自我介绍。"
+	},
+	{
+		"name": "精神病61号",
+		"introduction": "笑一个吧，功成名就不是目的\n\n让自己快乐快乐，这才叫做意义"
+	},
+	{
+		"name": "精神病64号",
+		"introduction": "靠进出我院刷人生经验，聪明却不用到正处上的聪明精神病。"
 	}
 ]

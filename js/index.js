@@ -2,19 +2,31 @@ const wrapper = document.getElementById('humens_wrapper')
 const humenEdit = document.getElementsByClassName('humen_edit')
 const humenIntro = document.getElementsByClassName('humen_intro')
 const humenEditIntro = document.getElementsByClassName('humen_edit_intro')
+const humensTotalWrapper = document.getElementsByClassName('humens_total_wrapper')[0]
+const total = document.getElementById('total')
+const boy = document.getElementById('boy')
+const girl = document.getElementById('girl')
+const noSex = document.getElementById('no_sex')
+let hasShow = false
+let timer = null
+
 // let humens = []
 
 let preIndex = null
 let liStr = ''
 
-
 const initHtml = () => {
+	let totalCount = 0, boyCount = 0, girlCount = 0, noSexCount = 0;
 	humens.forEach((item, index) => {
+		if (index > 2 && item.name && !item.introduction.includes('离院')) {
+			totalCount++
+			item.sex ? item.sex === 1 ? boyCount++ : girlCount++  : noSexCount++
+		}
 		liStr += 
 		`<li class="humen_item">
 			<h2 class="humen_name_wrapper">
 				<span class="humen_name">${item.name}</span>
-				${item.sex ? item.sex === 1 ? `<img class="sex_icon" src="${boy}"/>` : `<img class="sex_icon" src="${girl}"/>` : ''}
+				${item.sex ? item.sex === 1 ? `<img class="sex_icon" src="${boySrc}"/>` : `<img class="sex_icon" src="${girlSrc}"/>` : ''}
 			</h2>
 			<p class="humen_intro ${item.introduction.includes('离院') ? 'gone' : ''} ${item.introduction.includes('正在想') ? 'none' : ''}" >${item.introduction}</p>
 		</li>`
@@ -23,9 +35,13 @@ const initHtml = () => {
 	})
 	
 	wrapper.innerHTML = liStr
+
+	total.innerText = totalCount
+	boy.innerText = boyCount
+	girl.innerText = girlCount
+	noSex.innerText = noSexCount
 }
 initHtml()
-
 
 const editItem = (index) => {
 	if (preIndex !== null) {
@@ -45,6 +61,17 @@ const editItem = (index) => {
 	}, 0)
 }
 
+wrapper.onscroll = (e) => {
+	timer && clearTimeout(timer)
+	timer = setTimeout(() => {
+		if (e.target.scrollTop === 0) {
+			hasShow = false
+			humensTotalWrapper.classList.remove('shaow')
+		} else {
+			!hasShow && humensTotalWrapper.classList.add('shaow')
+		}
+	}, 16)
+}
 
 // ajax({  
 // 	url: '/humens',

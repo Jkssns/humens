@@ -8,12 +8,49 @@ li {
 body {
 	background-color: #f7f7f7;
 }
-.humens_wrapper {
+.humens_container {
 	width: 100%;
 	height: 100%;
-	padding: 20px;
-	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.humens_total_wrapper {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 20px 5px;
+	font-size: 14px;
+	color: #3a3a3a;
+	line-height: 30px;
+}
+.humens_total_wrapper.shaow {
+	/* box-shadow: 2.4px 3.2px 3.4px rgba(0, 0, 0, 0.022),
+				6px 8.1px 8.7px rgba(0, 0, 0, 0.031),
+				12.2px 16.5px 17.7px rgba(0, 0, 0, 0.039),
+				25.2px 33.9px 36.5px rgba(0, 0, 0, 0.048),
+				69px 93px 100px rgba(0, 0, 0, 0.07); */
+	-webkit-box-shadow: 0px 6px 11px -3px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 6px 11px -3px rgba(0,0,0,0.25);
+	box-shadow: 0px 6px 11px -3px rgba(0,0,0,0.25);
+}
+.humens_total_wrapper #total {
+	color: #3a3a3a;
+}
+.humens_total_wrapper #boy {
+	color: #6fb1fd;
+}
+.humens_total_wrapper #girl {
+	color: #fd94a9;
+}
+.humens_wrapper {
+	width: 100%;
+	flex: 1;
 	overflow-y: auto;
+	padding: 10px 20px 20px;
+	box-sizing: border-box;
 }
 .humen_item {
 	padding: 12px;

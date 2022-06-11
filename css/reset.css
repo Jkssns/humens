@@ -91,6 +91,10 @@
    vertical-align: baseline;
    font-family: SysFontR;
  }
+
+em {
+  font-style: normal;
+}
  
  html,
  body,

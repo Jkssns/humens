@@ -333,6 +333,7 @@ var humens = [
 	},
 	{
 		"name": "精神病66号",
+		"sex": 1,
 		"introduction": "正在想自己的自我介绍。"
 	}
 ]

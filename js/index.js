@@ -9,7 +9,6 @@ let liStr = ''
 
 
 const initHtml = () => {
-	// <img class="sex_icon" src="./../images/boy.svg"/>
 	humens.forEach((item, index) => {
 		liStr += 
 		`<li class="humen_item">
@@ -47,21 +46,25 @@ const editItem = (index) => {
 }
 
 
-// ajax({
+// ajax({  
 // 	url: '/humens',
 // 	method: 'get',
 // }).then(res => {
 // 	console.log("res::: ", res);
+// 	humens = res.data
+// 	initHtml()
 // }).catch(err => {
-// 	alert('怎么搞得？是你网络的问题还是我的问题？')
+// 	console.log("err::: ", err);
+// 	alert('你网络有问题，肯定不是技术人员的问题。')
 // })
 
 // ajax({
-// 	url: 'http://10.0.0.40:3000/humens',
+// 	url: '/humens',
 // 	method: 'post',
 // 	data: humens,
 // }).then(res => {
 // 	console.log("res::: ", res);
 // }).catch(err => {
-// 	alert('怎么搞得？是你网络的问题还是我的问题？')
+// 	console.log("err::: ", err);
+// 	// alert('怎么搞得？是你网络的问题还是我的问题？')
 // })

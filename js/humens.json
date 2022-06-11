@@ -265,11 +265,6 @@ var humens = [
 		"introduction": "正在想自己的自我介绍。"
 	},
 	{
-		"name": "精神病52号",
-		"sex": 1,
-		"introduction": "正在想自己的自我介绍。"
-	},
-	{
 		"name": "",
 		"introduction": ""
 	},
@@ -325,7 +320,7 @@ var humens = [
 	{
 		"name": "精神病64号",
 		"sex": 2,
-		"introduction": "靠进出我院刷人生经验，聪明却不用到正处上的聪明精神病。"
+		"introduction": "靠进出我院刷人生经验，聪明却不用到正处上的聪明精神病。（已痊愈离院）"
 	},
 	{
 		"name": "",

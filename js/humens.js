@@ -362,8 +362,8 @@ const humens = [
 	},
 	{
 		"name": "精神病73号",
-		"sex": 1,
-		"introduction": "张三正在想自己的自我介绍。"
+		"sex": 2,
+		"introduction": "嚣张的狂徒张三"
 	},
 	{
 		"name": "精神病74号",

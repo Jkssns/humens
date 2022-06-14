@@ -264,8 +264,9 @@ var humens = [
 		"introduction": "正在想自己的自我介绍。"
 	},
 	{
-		"name": "",
-		"introduction": ""
+		"name": "精神病52号",
+		"sex": 2,
+		"introduction": "后来居上的志玲姐姐。"
 	},
 	{
 		"name": "",
@@ -358,5 +359,20 @@ var humens = [
 		"name": "精神病72号",
 		"sex": 2,
 		"introduction": "3号的双胞胎猪妹  太爱吃太爱睡了  而且猪真的很可爱是吧！"
+	},
+	{
+		"name": "精神病73号",
+		"sex": 1,
+		"introduction": "张三正在想自己的自我介绍。"
+	},
+	{
+		"name": "精神病74号",
+		"sex": 2,
+		"introduction": "Lola（种田版）正在想自己的自我介绍。"
+	},
+	{
+		"name": "精神病75号",
+		"sex": 2,
+		"introduction": "DESPERADO正在想自己的自我介绍。"
 	},
 ]

@@ -373,11 +373,26 @@ const humens = [
 	{
 		"name": "精神病75号",
 		"sex": 2,
-		"introduction": "DESPERADO正在想自己的自我介绍。"
+		"introduction": "（已痊愈离院）"
 	},
 	{
 		"name": "精神病76号",
 		"sex": 2,
 		"introduction": "宇宙第一可爱又可恶的反派角色"
+	},
+	{
+		"name": "精神病77号",
+		"sex": 1,
+		"introduction": "钻过妖精洞也见过活神仙，精通占卜塔罗星座命理并熟练运用于日常生活，如果想要和77号切磋技艺，得掏2块。"
+	},
+	{
+		"name": "精神病78号",
+		"sex": 1,
+		"introduction": "摄影师正在想自己的自我介绍。"
+	},
+	{
+		"name": "精神病79号",
+		"sex": 2,
+		"introduction": "榴莲美女正在想自己的自我介绍。"
 	},
 ]

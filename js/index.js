@@ -1,3 +1,5 @@
+const loading = document.querySelector('.loading_wrapper')
+const container = document.querySelector('.humens_container')
 const wrapper = document.getElementById('humens_wrapper')
 const humenEdit = document.getElementsByClassName('humen_edit')
 const humenIntro = document.getElementsByClassName('humen_intro')
@@ -11,6 +13,11 @@ let hasShow = false
 let timer = null
 
 // let humens = []
+let timeout = setTimeout(() => {
+	loading.style.display = 'none'
+	container.style.display = 'flex'
+	clearTimeout(timeout)
+}, 5000)
 
 let preIndex = null
 let liStr = ''
@@ -73,14 +80,14 @@ wrapper.onscroll = (e) => {
 	}, 16)
 }
 
-let a = JSON.stringify(humens.map((item, index) => {
-	let i = index - 1
-	return {
-		...item,
-		id: i
-	}
-}))
-console.log("a::: ", a);
+// let a = JSON.stringify(humens.map((item, index) => {
+// 	let i = index - 1
+// 	return {
+// 		...item,
+// 		id: i
+// 	}
+// }))
+// console.log("a::: ", a);
 
 // ajax({  
 // 	url: '/humens',

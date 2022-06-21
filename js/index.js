@@ -73,6 +73,15 @@ wrapper.onscroll = (e) => {
 	}, 16)
 }
 
+let a = JSON.stringify(humens.map((item, index) => {
+	let i = index - 1
+	return {
+		...item,
+		id: i
+	}
+}))
+console.log("a::: ", a);
+
 // ajax({  
 // 	url: '/humens',
 // 	method: 'get',

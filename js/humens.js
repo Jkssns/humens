@@ -544,4 +544,34 @@ const humens = [
         "introduction":"意大利 正在想自己的自我介绍",
         "id":90
     },
+    {
+        "name":"精神病97号",
+        "sex":1,
+        "introduction":"意大利 正在想自己的自我介绍",
+        "id":91
+    },
+    {
+        "name":"7_",
+        "sex":1,
+        "introduction":"世界第一的男人",
+        "id":92
+    },
+    {
+        "name":"一个大社杂",
+        "sex":2,
+        "introduction":"一个大社杂",
+        "id":93
+    },
+    {
+        "name":"精神病100号",
+        "sex":1,
+        "introduction":"大美女",
+        "id":94
+    },
+    {
+        "name":"精神病101号",
+        "sex":2,
+        "introduction":"大美女",
+        "id":95
+    },
 ]

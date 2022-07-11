@@ -13,11 +13,20 @@ let hasShow = false
 let timer = null
 
 // let humens = []
-let timeout = setTimeout(() => {
+let showCatLoading = window.sessionStorage.getItem('showCatLoading')
+
+if (showCatLoading) {
 	loading.style.display = 'none'
 	container.style.display = 'flex'
-	clearTimeout(timeout)
-}, 5000)
+} else {
+	let timeout = setTimeout(() => {
+		loading.style.display = 'none'
+		container.style.display = 'flex'
+		clearTimeout(timeout)
+		confirm('技术人员正专攻小程序，本列表暂时放弃维护。')
+		window.sessionStorage.setItem('showCatLoading', 'true')
+	}, 5000)
+}
 
 let preIndex = null
 let liStr = ''

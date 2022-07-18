@@ -14,6 +14,7 @@ let timer = null
 
 // let humens = []
 let showCatLoading = window.sessionStorage.getItem('showCatLoading')
+let showTip = window.localStorage.getItem('showTip')
 
 if (showCatLoading) {
 	loading.style.display = 'none'
@@ -23,8 +24,11 @@ if (showCatLoading) {
 		loading.style.display = 'none'
 		container.style.display = 'flex'
 		clearTimeout(timeout)
-		confirm('技术人员正专攻小程序，本列表暂时放弃维护。')
+		if (!showTip) {
+			confirm('技术人员正专攻小程序，本列表暂时放弃维护。')
+		}
 		window.sessionStorage.setItem('showCatLoading', 'true')
+		window.sessionStorage.setItem('showTip', 'true')
 	}, 5000)
 }
 

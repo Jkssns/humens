@@ -28,7 +28,7 @@ if (showCatLoading) {
 			confirm('技术人员正专攻小程序，本列表暂时放弃维护。')
 		}
 		window.sessionStorage.setItem('showCatLoading', 'true')
-		window.sessionStorage.setItem('showTip', 'true')
+		window.localStorage.setItem('showTip', 'true')
 	}, 5000)
 }
 

@@ -1,0 +1,145 @@
+
+:root {
+	--intro-color: #00000073;
+}
+li {
+	list-style: none;
+}
+body {
+	background-color: #f7f7f7;
+}
+.loading_wrapper {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.loading_text {
+	width: 200px;
+	margin: 40vh auto 0;
+	text-align: center;
+	font-family: '楷体';
+	color:#3a3a3a;
+}
+.loading_text > .loading_img {
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin-bottom: 4px;
+	border-radius: 2px;
+	animation: run 5s;
+}
+@keyframes run {
+	0% {
+		transform: translateX(400%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+.humens_container {
+	display: none;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	overflow: hidden;
+}
+.humens_total_wrapper {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px 10px;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: #3a3a3a;
+	line-height: 30px;
+}
+.humens_total_wrapper.shaow {
+	/* box-shadow: 2.4px 3.2px 3.4px rgba(0, 0, 0, 0.022),
+				6px 8.1px 8.7px rgba(0, 0, 0, 0.031),
+				12.2px 16.5px 17.7px rgba(0, 0, 0, 0.039),
+				25.2px 33.9px 36.5px rgba(0, 0, 0, 0.048),
+				69px 93px 100px rgba(0, 0, 0, 0.07); */
+	-webkit-box-shadow: 0px 6px 11px -3px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 6px 11px -3px rgba(0,0,0,0.25);
+	box-shadow: 0px 6px 11px -3px rgba(0,0,0,0.25);
+}
+.humens_total_wrapper #total {
+	color: #3a3a3a;
+}
+.humens_total_wrapper #boy {
+	color: #6fb1fd;
+}
+.humens_total_wrapper #girl {
+	color: #fd94a9;
+}
+.humens_wrapper {
+	width: 100%;
+	flex: 1;
+	overflow-y: auto;
+	padding: 0 20px 20px;
+	box-sizing: border-box;
+}
+.humen_item {
+	padding: 12px;
+	margin-top: 12px;
+	background: #FFFFFF;
+	opacity: 0.8;
+	box-shadow: 0px 30px 40px rgba(151, 151, 151, 0.16);
+	border-radius: 12px;
+	overflow: hidden;
+}
+.humen_item:nth-of-type(1) {
+	margin-top: 0px;
+}
+.humen_name_wrapper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	color: #000000d9;
+	font-size: 14px;
+	line-height: 1.5715;
+}
+.sex_icon {
+	width: 18px;
+	height: 18px;
+	margin-left: 10px;
+}
+.intro {
+	
+}
+.humen_intro{
+	display: block;
+	color: var(--intro-color);
+	font-size: 14px;
+	line-height: 1.5715;
+	white-space: pre-line;
+	word-break: break-all;
+}
+.humen_intro.none{
+	font-weight: bolder;
+	/* display: none; */
+}
+.humen_intro.gone{
+	/* color: rgba(0, 0, 0, 0.5); */
+}
+.humen_edit {
+	flex: 1;
+	text-align: right;
+}
+.humen_edit_intro {
+	display: none;
+	width: 100%;
+	resize: vertical;
+	color: var(--intro-color);
+	font-size: 14px;
+	line-height: 1.5715;
+	white-space: pre-wrap;
+	word-break: break-all;
+	box-sizing: border-box;
+}
+.humen_edit_intro.block {
+	display: block;
+}

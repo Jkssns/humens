@@ -6,137 +6,35 @@
 	<meta http-equiv="expires" content="0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/index.css">
 	<title>精神病们的自我介绍</title>
-	<style>
-		* {
-			margin : 0;
-			padding: 0;
-		}
-		li {
-			list-style: none;
-		}
-		.humens_wrapper {
-			width: 100%;
-			height: 100%;
-			padding: 20px 20px 0;
-			box-sizing: border-box;
-			overflow-y: auto;
-		}
-		.humen_item {
-			margin-top: 12px;
-		}
-		.humen_name {
-			font-family: 楷体;
-			font-weight: 600;
-		}
-		.humen_intro{
-			line-height: 30px;
-		}
-	</style>
 </head>
-<body>
-	<ul class="humens_wrapper" id="humens_wrapper"></ul>
-</body>
-<script>
-	const humens = [
-		{
-			"name": "院长",
-			"introduction": "精神病院院长，不在本院，在病友的心中或帅气或老迈的活着。据传院长在印尼有很多红颜知己，院长没有辟谣。"
-		},
-		{
-			"name": "精神病1号",
-			"introduction": "精神病1号，本院特殊人员，只在22点0分到22点10分出现。有多重身份：哥伦比亚硕士大学生、波士顿硕士和清华辍学人。他和院长有很深的关系，这是他自己说的。"
-		},
-		{
-			"name": "精神病2号",
-			"introduction": "我是精神病2号，我擅长给病友排序，建议大家不要换床位，会造成排序困难。"
-		},
-		{
-			"name": "精神病3号",
-			"introduction": "3号暴力狂，擅长锤人，她常说：“别占我的3号铺。”精神病3号本来是4号，但是她占了3号的床铺。"
-		},
-		{
-			"name": "精神病4号",
-			"introduction": "我的自我介绍是：谁又知道我的苦，谁又能证明你的甜呢，世间一切都是无常，无常罢了。精神病4号本来是3号，但是3号占了他的床铺。"
-		},
-		{
-			"name": "精神病5号",
-			"introduction": "看头像应该是一个歌手，对精神病1号有较强的执念，是院长的私生子。"
-		},
-		{
-			"name": "精神病6号",
-			"introduction": "6号情景剧爱好者，喜欢喝酒。常常冒充院长。"
-		},
-		{
-			"name": "精神病7号",
-			"introduction": "查房医生"
-		},
-		{
-			"name": "精神病8号",
-			"introduction": "Blue 鱼表情，不喜欢句号。。。"
-		},
-		{
-			"name": "精神病9号",
-			"introduction": "擅长撒娇撒泼，随时随地生气的撒娇怪。她说：“凭什么让你高兴？”"
-		},
-		{
-			"name": "精神病10号",
-			"introduction": "你好，这是10号床特别打造的精神病陪护，晚上不要去阳台抽烟，我会和你打招呼的。（10号病友对与院长和2号接吻有强烈需求，但这违背了2号和院长本人的意愿。）"
-		},
-		{
-			"name": "精神病11号",
-			"introduction": "神秘的TA还没有自我介绍。"
-		},
-		{
-			"name": "精神病12号",
-			"introduction": "神秘的TA还没有自我介绍。"
-		},
-		{
-			"name": "精神病13号",
-			"introduction": "神秘的TA还没有自我介绍。"
-		},
-		{
-			"name": "精神病14号",
-			"introduction": "已痊愈离院"
-		},
-		{
-			"name": "精神病15号",
-			"introduction": "神秘的TA还没有自我介绍。"
-		},
-		{
-			"name": "精神病16号",
-			"introduction": "神秘的TA还没有自我介绍。"
-		},
-		{
-			"name": "精神病17号",
-			"introduction": "北京 00年 喜欢撕报纸看戏 最想看10号和院长舌吻"
-		},
-		{
-			"name": "精神病18号",
-			"introduction": "正在想自己的自我介绍。"
-		},
-		{
-			"name": "精神病19号",
-			"introduction": "正在想自己的自我介绍。"
-		},
-		{
-			"name": "精神病20号",
-			"introduction": "正在想自己的自我介绍。"
-		},
-		{
-			"name": "精神病21号",
-			"introduction": "间歇性情绪正弦函数，时常无欲无求，最终的归宿就是全部人的归宿。"
-		},
-	]
-	const wrapper = document.getElementById('humens_wrapper')
-	let liStr = ''
-	humens.forEach((item) => {
-		liStr += `<li class="humen_item">
-			<h2 class="humen_name">群昵称：${item.name}</h2>
-			<p  class="humen_intro">${item.introduction}</p>
-		</li>`
-	})
 
-	wrapper.innerHTML = liStr
+<body>
+	<div class="loading_wrapper">
+		<div class="loading_text">
+			<img class="loading_img" src="./images/cat_run.gif" alt="">
+			<span>精神病们正在跑来的路上...</span>
+		</div>
+	</div>
+
+	<div class="humens_container">
+		<p class="humens_total_wrapper">
+			<span>我院总计：<em id="total">0</em></span>
+			<span>男性：<em id="boy">0</em></span>
+			<span>超级美女：<em id="girl">0</em></span>
+			<span>无性：<em id="no_sex">0</em></span>
+		</p>
+		<ul class="humens_wrapper" id="humens_wrapper"></ul>
+	</div>
+</body>
+
+<script>
+	const boySrc = './images/boy.svg';
+	const girlSrc = './images/girl.svg';
 </script>
+<script src="./js/humens.js"></script>
+<script src="./js/ajax.js"></script>
+<script src="./js/index.js"></script>
 </html>
